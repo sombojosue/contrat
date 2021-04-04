@@ -73,8 +73,8 @@
               </div>
               
               <div class="form-group">
-                <input type="submit" name="contact" class="btn  py-3 px-5" onclick="window.location = 'check.html'" style="width: 100%;background: #fa1e0e;color: #fff;"><span style="font-size: 1.1rem" value="SIGN IN">
-                
+                <a href="check.html" class="btn  py-3 px-5" onclick="login()" style="width: 100%;background: #fa1e0e;color: #fff;"><span style="font-size: 1.1rem">SIGN IN</span>
+                </a>
               </div>
               <p>Vous n'avez pas un account? <a href="singup.html">SING UP</a></p>
             </form>
@@ -99,6 +99,18 @@
   <script src="js/main.js"></script>
   <script src="js/lightbox-plus-jquery.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
+
+  <script>
+    function login(){
+      window.location = 'check.html';
+      var email = document.getElementById('email').value;
+      var password =document.getElementById('password').value;
+      if (email == 'azor@gmail.com') {
+        window.location = 'check.html';
+        alert(email)
+      }
+    }
+  </script>
 
   <script>
 
